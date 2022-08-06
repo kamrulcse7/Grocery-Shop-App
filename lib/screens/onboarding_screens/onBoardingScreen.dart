@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_shop_app/screens/signupScreen.dart';
+
 import 'package:introduction_screen/introduction_screen.dart';
+
+import '../login/loginScreen.dart';
+import '../signup/signUpScreen.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -17,14 +20,14 @@ class OnBoardingScreen extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
-                  flex: 6,
+                  flex: 2,
                   child: Image.asset(
                     "assets/images/obs1.png",
-                    width: screenWidth * 0.90,
+                    width: screenWidth * 0.80,
                   ),
                 ),
                 Expanded(
-                  flex: 5,
+                  flex: 2,
                   child: Container(
                     child: Column(
                       // mainAxisAlignment: MainAxisAlignment.center,
@@ -33,7 +36,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "Welcome",
                           style: TextStyle(
-                            fontSize: 32.0,
+                            fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
                           ),
@@ -41,7 +44,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "To",
                           style: TextStyle(
-                            fontSize: 32.0,
+                            fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
                           ),
@@ -49,7 +52,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "Groceryus",
                           style: TextStyle(
-                            fontSize: 32.0,
+                            fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
                           ),
@@ -60,7 +63,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "15000+ Grocery item available",
                           style: TextStyle(
-                            fontSize: 24.0,
+                            fontSize: screenHeight * 0.03,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.italic,
                             color: Colors.black54,
@@ -69,7 +72,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "only for you",
                           style: TextStyle(
-                            fontSize: 24.0,
+                            fontSize: screenHeight * 0.03,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.italic,
                             color: Colors.black54,
@@ -89,20 +92,20 @@ class OnBoardingScreen extends StatelessWidget {
                   flex: 2,
                   child: Image.asset(
                     "assets/images/obs2.png",
-                    width: screenWidth * 0.90,
+                    width: screenWidth * 0.80,
                   ),
                 ),
                 Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Container(
                     child: Column(
-                      // mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           "Fast Delivery",
                           style: TextStyle(
-                            fontSize: 32.0,
+                            fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
                           ),
@@ -113,7 +116,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "very fast same-day delivery and",
                           style: TextStyle(
-                            fontSize: 24.0,
+                            fontSize: screenHeight * 0.03,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.italic,
                             color: Colors.black54,
@@ -122,7 +125,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "custom delivery system",
                           style: TextStyle(
-                            fontSize: 24.0,
+                            fontSize: screenHeight * 0.03,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.italic,
                             color: Colors.black54,
@@ -142,11 +145,11 @@ class OnBoardingScreen extends StatelessWidget {
                   flex: 2,
                   child: Image.asset(
                     "assets/images/obs3.png",
-                    width: screenWidth * 0.90,
+                    width: screenWidth * 0.80,
                   ),
                 ),
                 Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Container(
                     child: Column(
                       // mainAxisAlignment: MainAxisAlignment.center,
@@ -155,7 +158,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "Customer Support",
                           style: TextStyle(
-                            fontSize: 32.0,
+                            fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
                           ),
@@ -166,7 +169,7 @@ class OnBoardingScreen extends StatelessWidget {
                         Text(
                           "24/7 Customer Suppoert",
                           style: TextStyle(
-                            fontSize: 24.0,
+                            fontSize: screenHeight * 0.03,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.italic,
                             color: Colors.black54,
@@ -199,7 +202,7 @@ class OnBoardingScreen extends StatelessWidget {
         showSkipButton: true,
         skip: Text('Skip'),
         onSkip: ()=> Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => SignUpScreen())),
+            context, MaterialPageRoute(builder: (context) => LogInScreen())),
         next: Icon(Icons.arrow_forward),
         onChange: (index) => print('Page $index selected'),
         nextFlex: 0,
