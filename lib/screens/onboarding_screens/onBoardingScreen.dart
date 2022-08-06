@@ -39,6 +39,7 @@ class OnBoardingScreen extends StatelessWidget {
                             fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
+                            color: Color(0xFF000000)
                           ),
                         ),
                         Text(
@@ -47,6 +48,7 @@ class OnBoardingScreen extends StatelessWidget {
                             fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
+                            color: Color(0xFF000000)
                           ),
                         ),
                         Text(
@@ -55,6 +57,7 @@ class OnBoardingScreen extends StatelessWidget {
                             fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
+                            color: Color(0xFF000000)
                           ),
                         ),
                         SizedBox(
@@ -108,6 +111,7 @@ class OnBoardingScreen extends StatelessWidget {
                             fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
+                            color: Color(0xFF000000)
                           ),
                         ),
                         SizedBox(
@@ -161,6 +165,7 @@ class OnBoardingScreen extends StatelessWidget {
                             fontSize: screenHeight * 0.05,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
+                            color: Color(0xFF000000)
                           ),
                         ),
                         SizedBox(
@@ -198,7 +203,7 @@ class OnBoardingScreen extends StatelessWidget {
           ),
         ),
         onDone: () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => SignUpScreen())),
+            context, MaterialPageRoute(builder: (context) => LogInScreen())),
         showSkipButton: true,
         skip: Text('Skip'),
         onSkip: ()=> Navigator.pushReplacement(

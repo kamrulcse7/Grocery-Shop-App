@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:grocery_shop_app/theme/myTheme.dart';
 
 import 'screens/onboarding_screens/onBoardingScreen.dart';
 
@@ -10,6 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
+      // themeMode: ThemeMode.light,
+      // theme: MyTheme.lightTheme,
+      // darkTheme: MyTheme.darkTheme,
       home: OnBoardingScreen(),
     );
   }
