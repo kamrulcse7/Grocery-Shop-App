@@ -55,9 +55,8 @@ final _meat = Category(
 final _fruits = Category(
   name: "Fruits",
   imgUrl: "fruits.jpg",
-  Products: [_apple, _banana,_orange, _mango],
+  Products: [_apple, _banana, _orange, _mango],
 );
-
 
 final List<Category> categories = [
   _beverages,
@@ -65,4 +64,15 @@ final List<Category> categories = [
   _dairy,
   _meat,
   _fruits,
+];
+final List<Product> popular_products = [
+  Product(name: "Butter", imgUrl: "butter.jpg", price: 46),
+  Product(name: "Orange", imgUrl: "orange.jpg", price: 120),
+  Product(name: "Banana", imgUrl: "banana.jpg", price: 80),
+  Product(name: "Coffee", imgUrl: "coffee.jpg", price: 200),
+  Product(name: "Juice", imgUrl: "juice.jpg", price: 120),
+  Product(name: "Sandwich", imgUrl: "sandwich.jpg", price: 12),
+  Product(name: "Dinner Roll", imgUrl: "dinner_roll.jpg", price: 35),
+  Product(name: "Cheeses", imgUrl: "cheeses.jpg", price: 45),
+  Product(name: "Egg", imgUrl: "egg.jpg", price: 96),
 ];

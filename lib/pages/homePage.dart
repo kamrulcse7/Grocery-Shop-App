@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
           height: size.height,
           width: size.width,
           child: ListView(
+            shrinkWrap: true,
             children: [
               MyAppBar(),
               CategoriesSectionHome(),
